@@ -28,7 +28,7 @@ app.post('/', (req, res) => {
 
     let mailDetails = {
         from: 'clipboardmail07@gmail.com',
-        to: 'vinaythilak002@gmail.com',
+        to: 'yourmail@gmail.com',
         subject: 'Mail From chrome Extension.',
         text: clip
     };

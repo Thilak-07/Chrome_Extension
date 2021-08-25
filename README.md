@@ -11,8 +11,7 @@
 2. Install nodejs from Nodejs official website.
 3. Open the terminal in the folder where you have cloned the project.
 4. Now run <code>npm install</code> to  install the dependencies.
-5. Replace "yourmail@gmail.com" in server.js with your Gmail id.
-6. now run <code>node server.js</code> to start the server.
+5. now run <code>node server.js</code> to start the server.
 
 ## Get Started:
 Copy any text and click the Extension icon to send the copied text to your Gmail Id.

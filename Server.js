@@ -17,6 +17,7 @@ app.use(cors(corsOptions));
 app.post('/', (req, res) => {
     console.log("Got Post request.")
     var clip = req.body.clip;
+    var MailId = req.body.MailId;
 
     let mailTransporter = nodemailer.createTransport({
         service: 'gmail',
@@ -28,7 +29,7 @@ app.post('/', (req, res) => {
 
     let mailDetails = {
         from: 'clipboardmail07@gmail.com',
-        to: 'yourmail@gmail.com',
+        to: MailId,
         subject: 'Mail From chrome Extension.',
         text: clip
     };
@@ -37,7 +38,7 @@ app.post('/', (req, res) => {
         if(err) {
             console.log('Error Occurs');
         } else {
-            console.log('Email sent successfully');
+            console.log(`Email sent successfully to ${MailId}`);
         }
     });
 })

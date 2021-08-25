@@ -1,5 +1,7 @@
 chrome.runtime.onInstalled.addListener(() => {
     console.log("Extension Successfully Installed.")
+    const emailId = prompt("Enter Your Email ID");
+    localStorage.setItem("ToMailID", emailId);
 });
 
 chrome.browserAction.onClicked.addListener((tab) => {
@@ -25,7 +27,8 @@ function sendJSON(clipboardText) {
     xhr.setRequestHeader("Content-Type", "application/json");
 
     // Converting JSON data to string
-    var data = JSON.stringify({ "clip": clipboardText});
+    let emailId = localStorage.getItem("ToMailID");
+    var data = JSON.stringify({ "clip": clipboardText, "MailId": emailId});
 
     // Sending data with the request
     xhr.send(data);

@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 const corsOptions = {
-    origin:'chrome-extension://nmcjdbokjihchnjjonhddfcelncobgle', 
+    origin:'*', 
     credentials:true,
     optionSuccessStatus:200
 }

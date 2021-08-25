@@ -1,0 +1,19 @@
+{
+    "name": "Clipboard Share.",
+    "description": "A chrome extension to send copied text in the clipboard to your mobile.",
+    "version": "1.0",
+    "manifest_version": 2,
+    "background": {
+        "page": "background.html"
+    },
+    "permissions": ["storage", "clipboardRead"],
+    "browser_action": {
+        "default_icon": {
+            "128": "favicon.png"
+        }
+    },
+    "icons": {
+        "128": "favicon.png"
+    }
+}
+

@@ -1,4 +1,5 @@
-# Onsite Task 2 : Chrome Extension
+# Chrome Extension
+This is a Chrome extension to send copied text as a email from your browser to any given MailId.
 
 ## Extension Setup:
 1. Open the Extension Management on the Chrome menu. <code>More Tools >>> Extensions.</code>
